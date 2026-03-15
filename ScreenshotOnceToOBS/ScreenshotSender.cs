@@ -62,11 +62,12 @@ namespace ScreenshotOnceToOBS
             // Set the path of the image for the created image source
             SetSourcePath(connection, fileName, fullPath);
 
-            // Find the sceneItemId of the source within the current scene
-            int sceneItemId = GetSourceSceneId(connection, fileName);
+            //// Find the sceneItemId of the source within the current scene
+            //// (but do not, because I don't need it if I'm not setting the transform)
+            //int sceneItemId = GetSourceSceneId(connection, fileName);
 
-            // Set the transform of the image
-            // (but do not, because I actually prefer it in the top left corner)
+            //// Set the transform of the image
+            //// (but do not, because I actually prefer it in the top left corner)
             //SetSceneItemTransform(connection, defaultScale, sceneItemId);
 
             return true;
